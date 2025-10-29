@@ -578,8 +578,9 @@ elseif (${PLATFORM} STREQUAL linux) # linux
     endif ()
 
     set (CPACK_SET_DESTDIR                 TRUE)
-    set (CPACK_PACKAGE_NAME                "intel")
-    set (CPACK_PACKAGE_VERSION             "intel")
+    set (CPACK_PACKAGE_NAME "metrics-discovery")
+    set (CPACK_SOURCE_PACKAGE_FILE_NAME "metrics-discovery-${MD_VERSION}")
+    set (CPACK_PACKAGE_VERSION             ${MD_VERSION})
     set (CPACK_PACKAGE_RELOCATABLE         FALSE)
     set (CPACK_PACKAGE_INSTALL_DIRECTORY   ${CMAKE_INSTALL_PREFIX})
     set (CPACK_PACKAGE_CONTACT             "Intel Corporation")
